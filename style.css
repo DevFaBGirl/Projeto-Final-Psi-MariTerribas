@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Dancing+Script:wght@400;700&family=Fuggles&family=Kaushan+Script&family=Lobster&family=Raleway:ital,wght@0,500;0,700;1,300&family=Roboto:wght@300;400&display=swap');
+
+*{
+   margin:0; 
+   padding:0;
+}
+
+/*CABEÇALHO E IMAGEM*/
+header, img {
+    width: 100%;
+    height: 320px;
+    
+}
+
+/*BARRA DE NAVEGAÇÃO-MENU*/
+nav {
+    background-color: #C87500;
+    text-align: center;
+    padding: 5px;
+}
+
+.a-menu{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.a-menu:link, .a-menu:visited { /*Quando o menu a é carregado*/
+    color:#fff;
+}
+
+.a-menu:hover, .a-menu:active{ /*Quando o menu é a ativo/ passa o mouse sobre o menu*/
+    color: #553C46;
+}
+
+
+/* TODAS SESSÕES*/
+section {
+    padding: 20px;
+}
+
+h1{
+    font-size: 2rem; 
+    font-family: 'Kaushan Script', cursive;
+    text-align:center;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 2rem; 
+}
+
+
+h3 {
+    font-family: 'Kaushan Script', cursive;  
+    
+}
+
+p{
+    color:"#757575"; 
+    font-size: 20px; 
+    text-align: justify; /*text-align: center;*/
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    
+}
+.p-agende{
+text-align: center;
+
+}
+
+a {
+    color: #553C46;
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+}
+
+
+/*SOBRE PSIMARI*/
+#id-sobre {
+    display: flex;
+}
+
+article {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+}
+
+#txt-sobre{
+
+    width: 75%;
+    margin: 40px;
+
+}
+
+.img-psimari {
+    width: 300px;
+    height: 355px;
+    padding: 20px;
+    border-radius: 15%;
+}
+
+
+#txt-preto{
+    color: #553C46;
+    font-weight: bold;
+}
+
+
+/*SESSÃO ABORDAGEM*/
+#pag-abordagem {
+    background-color: #C87500;
+    
+}
+
+#pag-abordagem h2, h3{
+    color: white;
+}
+
+#pag-abordagem h3 {
+    padding: 20px 40px 10px;
+}
+
+#pag-abordagem p {
+    color: white;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: circle;
+    padding: 10px 50px;
+
+}
+
+li {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom:10px;
+
+}
+
+
+/*SESSÃO SERVIÇOS*/
+
+
+/* #container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}*/
+
+#container{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+
+#pag-service {
+    background-color: #EEE;
+}
+
+#pag-service h2 {
+    color: #553C46;
+}
+
+.card {
+   
+    background-color: white;
+    margin: 10px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px #ccc;
+    transition: 0.55s;
+    
+
+}
+
+.img-card {
+    width: 350px;
+    height: 420px;
+    border-radius:20px 20px 0px 0px ;
+}
+
+.card:hover{
+    box-shadow: 0px 8px 16px #ccc;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    color: #553C46;
+    margin-bottom:10px;
+}
+
+.card-content p {
+text-align: justify;
+font-size: 1rem;
+
+}
+
+
+
+
+
+/*SESSÃO MORE-MAIS INFO*/
+#pag-more {
+    background-color: #C87500;
+}
+
+#pag-more h2 {
+    font-size: 2rem; 
+    font-family: 'Kaushan Script', cursive;    
+}
+
+#pag-more p, h2 {
+    color: white;
+}
+
+#page-more p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#pag-more h3 {
+    color: white;
+}
+
+.container {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+
+}
+*.video{
+    width: 480px;
+    height: 280px;  
+
+    
+}
+
+/* MÍDIAS E AGENDAMENTO*/
+fieldset {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    legend {
+        padding: 0 5px;
+        font-weight: bold;
+    }
+    .inline-items {
+        display: flex; 
+        align-items: center; 
+        margin-bottom: 5px; 
+    }
+    .inline-items label {
+        margin-left: 8px; 
+    }
+    
+    .inline-items input[type="checkbox"],
+    .inline-items input[type="radio"] {
+        width: 50px;
+        margin-top: 18px;
+        height: 20px;
+    }
+    
+    fieldset {
+        padding-left: 0;
+    }
+
+.schedule-form{
+    align-items: center;
+}
+.information{
+    width: 50%;
+}
+
+#agenda{
+    text-align: center;
+}
+.buttons{
+    margin: 5px;
+    height: 40px;
+    border-radius: 10px;
+}
+.schedule{
+    background-color: forestgreen;
+    color: #000;
+    cursor: pointer;
+}
+.cancel{
+    background-color: red;
+    color: #000;
+    cursor: pointer;
+}
+#day, #hour{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px;
+}
+#msg{
+    border-radius: 5px;
+}
+
+
+
+/*SESSÃO RODAPÉ - FOOTER*/
+.media-container{
+  display: flex; 
+  justify-content: left; 
+  align-items: center;
+  margin-left: 40px;
+  
+  
+}
+.img-socal-media {
+        display: block; 
+        width: 30px;
+        height: auto;
+ }
+
+.a-media {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.contact{
+    margin: 0;
+}
+
+
+.a-triade {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+footer {
+
+    background-color: #251A17;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+
+}
+
+/*AGENDAMENTO*/
+
+#pag-agendamento p {
+    text-align: center;
+}
+
+
+#pag-agendamento {
+
+}
+
+
+form {
+    background-color: #C87500;
+    width: 600px;
+    margin: 70px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+
+input, select {
+    width: 100%;
+    font: 1.2rem 'poppins', sans-serif;
+    border-radius: 5px;
+    font-weight: 300;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    margin: 10px 0 20px 0 ;
+}
+
+
+
+label, legend {
+    font: 1.2rem 'poppins', sans-serif;
+    color: #212121;
+
+}
+

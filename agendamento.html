@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head> 
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Fabiana Balduína" />
+        <meta name="keyswords" content="Psicologia,Mariana Terribas,Saúde Mental,Atendimentos" />  <!--150 palavras chaves-->
+        <meta name="description" content="Atendimentos online para cuidados com a saúde mental" /> <!-- 90 palavras -->
+        <link rel="stylesheet" href="style.css">
+
+        <title> Agendamento </title>
+        
+    </head>
+    <body> 
+        <header> 
+            <img src="img/bannerpsimari.png" alt="imagem de banner do site, fundo preto com lilás, contendo uma mulher 
+            negra com cabelo cacheado, atrás dela tem duas manadas e letras em caixa alta escrito Psi Mari" >
+        </header>
+        
+        
+       <nav> 
+            <a class="a-menu" href="index.html">PÁGINA INICIAL</a>
+            <a class="a-menu" href="index.html#pag-sobre">SOBRE</a>
+            <a class="a-menu" href="index.html#pag-abordagem">ABORDAGEM</a>
+            <a class="a-menu" href="index.html#service">SERVIÇOS</a>
+            <a class="a-menu" href="agendamento.html">AGENDAMENTO</a>
+        </nav> 
+       
+
+       
+            <h1>Agendamento</h1> 
+
+            <p id="agenda"> 
+                <!--Aqui você encontrará um espaço acolhedor e seguro para cuidar da sua saúde emocional.--> 
+                Sinta-se à vontade para entrar em contato e agendar uma consulta. <strong>Grátis!</strong> 
+            </p>
+                <form name="frm-agendar" method="get" action="">
+                    <!--- NOME, EMAIL, SENHA, CELULAR-->
+                    <label for="nome"> Nome:</label> 
+                    <input id="nome" type="text" name="nome_completo" required placeholder="preencha seu nome completo" size="90" autofocus/> 
+                    
+                    <label for="email"></label> E-mail:</label> 
+                    <input id="email" type="email" name="email" required placeholder="nome@email.com" size="90"> 
+
+                    <label for="password"></label> Senha:</label> 
+                    <input id="password" type="password" name="password" required placeholder="somente número" size="90"> 
+
+                    <label for="phone"></label> Celular:</label> 
+                    <input id="phone" type="tel" name="phone" required placeholder="(99) 99999-9999" size="90" pattern=“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$”> 
+                    
+                    <!--- DIA E HORA-->
+                    <fieldset> 
+                        <legend>Agendamento</legend>
+                        
+                            
+                               <!--
+                                <td>
+                                    <label for="date"></label> Data:</label> 
+                                    <input id="date" type="date" name="date" required placeholder="data" size="30">
+    
+                                </td>
+                                -->  
+                                <div class="container schedule-form">
+                                    <label for="day"> Dia: </label>
+                                    <select id="day" name="day">
+                                        <option>-Selecione o dia-</option>
+                                        <option value="segunda">Segunda</option>
+                                        <option value="terca">Terça</option>
+                                        <option value="quarta">Quarta</option>
+                                        <option value="quarta">Quinta</option>
+                                        <option value="quarta">Sexta</option>
+                                    </select>
+                                    
+                                                       
+                                    <label for="hour"> Hora:</label>
+                                    <input id="hour" type="time" name="hour" required placeholder="hora" size="30">
+                                 </div>
+
+                                    
+                                    
+                                           
+                        
+                    </fieldset>
+                   
+                      
+                    <fieldset>
+        <legend>Gênero:</legend>
+        <div class="inline-items">
+            <input type="radio" id="Masculino" name="gender" value="Masculino">
+            <label for="Masculino">Masculino</label>
+        </div>
+        <div class="inline-items">
+            <input type="radio" id="Feminino" name="gender" value="Feminino">
+            <label for="Feminino">Feminino</label>
+        </div>
+    </fieldset>
+
+    <fieldset class="activities">
+        <legend>Serviços:</legend>
+        <div class="inline-items">
+            <input type="checkbox" id="Musculação" name="activities" value="Musculação">
+            <label for="Musculação">Ansiedade</label>
+        </div>
+        <div class="inline-items">
+            <input type="checkbox" id="Pilates" name="activities" value="Pilates">
+            <label for="Pilates">Depressão</label>
+        </div>
+        <div class="inline-items">
+            <input type="checkbox" id="Yoga" name="activities" value="Yoga">
+            <label for="Yoga">Autodescoberta</label>
+        </div>
+        <div class="inline-items">
+            <input type="checkbox" id="Corrida" name="activities" value="Corrida">
+            <label for="Corrida">Estresse emocional</label>
+        </div>
+    </fieldset>
+                    
+
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg" cols="80" rows="4">
+
+                    </textarea>
+                    
+                
+                    
+                    <!-- BOTÕES ENVIAR-->
+                     <section class="container">
+                        <input class="buttons schedule" type="submit" name="btn-enviar" value="AGENDAR" /> 
+                        <input class="buttons cancel" type="reset" name="btn-cancelar" value="CANCELAR"/>
+                    </section> 
+                   
+
+                </form> 
+           
+
+       
+     
+
+        <footer>
+                <p> 
+                    &copy; Desenvolvido por <a class="a-triade" href="https://www.instagram.com/triade_org/" target="_blank">Tríade Soluções Criativas</a> -2023 </p>
+        </footer>
+     
+    </body>
+</html>
