@@ -10,7 +10,7 @@ Este site foi desenvolvido como parte de um projeto acadêmico para mostrar as m
 No site conta, alguns serviços de aconselhamento e apoio psicológico para indivíduos que não condizem com a realizada. 
 
 ## Recursos
-- **Sobre Mariana:** Conheça a Psi Mariana Terribas;
+- **Banner, Menu e Sobre Mariana:** Conheça a Psi Mariana Terribas;
 ![image](https://github.com/DevFaBGirl/Projeto-Final-Psi-MariTerribas/assets/107576975/7a0046e6-1571-4b15-aaca-a28403e4716b)
 
 
